@@ -1,0 +1,480 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PRESIDENCY CANTEEN</title>
+	<link rel="icon" href="title.png" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+	border-radius: 3px;
+    padding: 0;
+    overflow: hidden;
+    background-color: tomato;
+}
+.bottom {
+	background-color:black;
+	padding-left:40;
+	border-radius:8px;
+	padding-right:40;
+	padding-right:0px;
+	padding-bottom:10px;
+	padding-top:10px;
+}
+.button31 {
+    background-color: white; 
+    color: lightblue; 
+    border: 2px solid #f44336;
+}
+.button31:hover {
+    background-color: #f44336;
+    color: white;
+}
+.button51 {
+    background-color: white;
+    color: lightblue;
+    border: 2px solid #555555;
+}
+.button51:hover {
+    background-color: #555555;
+    color: white;
+}
+.button21 {
+    background-color: white; 
+    color: lightyellow; 
+    border: 2px solid #008CBA;
+}
+.button21:hover {
+    background-color: #008CBA;
+    color: white;
+}
+li {
+    float: right;
+	//color : white;
+	font-size : 14px; 
+	font-variant : small-caps;
+	font-family : Arial, Helvetica, sans-serif;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #ff5233;
+	border-radius: 3px;
+	box-shadow:0 10px 10px 0 rgba(0,0,0,0.4),0 20px 20px 0 rgba(0,0,0,0.4) ;
+}
+.mySlides {
+	display:none;
+}
+body {
+    background-image: url("bgcover.png") ;
+}
+.img {
+	height: 300px;
+    width: 550px;
+	display: block;
+}
+.animate-fading {
+	animation:fading 10s infinite;
+}
+//@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.content {
+	max-width:980px;margin:auto;
+}
+.w3-rest {
+	overflow:hidden
+}
+.section {
+	margin-top:16px!important;
+	margin-bottom:16px!important;
+}
+.box {
+    width: 300px;
+	max-height:10px;
+    border: 3px solid gray;
+    margin: 55px;
+	padding: 25px;
+}
+.name {
+	color:#FFFFFF;
+	font-size: 50px;
+	font-family:"Monospace";
+}
+.container {
+    position: relative;
+    width: 50%;
+}
+.image {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .8s ease;
+	backface-visibility: hidden;
+}
+.middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%)
+}
+.container:hover .image {
+	opacity: 0.3;
+}
+.container:hover .middle {
+  opacity: 1;
+}
+.text {
+	background-color: TOMATO;
+	color: white;
+	font-size: 16px;
+	padding: 16px 14px;
+	text-align: center;
+	font-family : Arial, Helvetica, sans-serif;
+}
+div.transbox {
+	margin: 30px;
+	background-color: #ffffff;
+	border: 1px solid black;
+	opacity: 0.6;
+	filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+.assura {
+	background-color:white;
+}
+.ncontainer {
+    position: relative;
+}
+#rcorners2 {
+	border-radius: 3px;
+	background: #e5e5e5;	    
+}
+.ncenter {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+	font-family: courier;
+}
+.footfont{
+	color : white;
+	font-size : 17px; 
+	font-variant : small-caps;
+	font-family : Arial, Helvetica, sans-serif;
+}
+.footfont2{
+	color : white;
+	font-size : 12px; 
+	text-align: center;
+	float: center;
+	font-family : Arial, Helvetica, sans-serif;
+}
+.footfont2 a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+.footfont2 a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+.footfont2 a:hover {
+    color: red;
+	text-shadow: 5px 4px 10px gray;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.footfont2 a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.shad {
+	padding:0px 0px 0px 0px;
+	border-radius: 10px;
+}
+.shad:hover {
+	box-shadow:5px 4px 10px 0 gray, 5px 4px 20px 0 gray;
+ }
+.spac {
+	padding-left: 10px; 
+	padding-right : 10px; 
+}
+
+
+
+
+
+/* login page */
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imglcontainer {
+    text-align: center;
+    margin-top:10px;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.lcontainer {
+    padding: 120px;
+	margin-top:0;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 400px;
+    top: 0;
+    width: 45%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: ; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0); /* Black w/ opacity */
+    padding-top: 15px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 0 auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+
+
+ </style>
+</head>
+<body>
+	<div class="ncontainer">
+		<img style="opacity:" src="img/presi.jpg" alt="Norway" width="100%" height="400" >
+		<div class="ncenter"></div>
+	</div>
+<ul>
+  <li><a href="home.html">Logout</a></li>
+  <li><a href="change-pwd.php">Change Password</a></li>
+</ul>
+	
+	
+
+	</br>
+<center> <h2 >Our Menu</h2></center>
+	<table id="menu" border="0px" align="center">
+		<tr>
+			<td align="center">
+				<div class="container">
+					<a href="Dessert-Beverage/WTDessertBeverage.html">
+						<img src="img/chocolava.jpg" alt="Avatar" class="image" style="width:100%">
+						<div class="middle">
+							<div class="text"  style="border-radius:2px;">DESSERT</div>
+						</div>
+					</a>
+				</div>
+			</td>
+			<td>
+				<center>
+					<div class="container">
+						<a href="North_Indian/WTNorthIndian.html">
+							<img src="img/paneer.jpg" alt="Avatar" class="image" style="width:100%">
+							<div class="middle">
+								<div class="text" style="border-radius:2px;">NORTH INDIAN</div>
+							</div>
+						</a>
+					</div>
+				</center>
+			</td>
+		</tr>
+		<tr>
+			<td height="25%" colspan="2"><br /></td>
+		</tr>
+		<tr>
+			<td align="center">
+				<div class="container">
+					<a href="Chinese/WTChinese.html">
+						<img src="img/salad.jpg" alt="Avatar" class="image" style="width:100%">
+						<div class="middle">
+							<div class="text" style="border-radius:2px;">CHINESE</div>
+						</div>
+					</a>
+				</div>
+			</td>
+			<td align="center">
+				<div class="container">
+					<a href="South_Indian/WTSouthIndian.html">
+						<img src="img/biriyani.jpg" alt="Avatar" class="image" style="width:100%">
+						<div class="middle">
+							<div class="text" style="border-radius:2px;">SOUTH INDIAN</div>
+						</div>
+					</a>
+				</div>
+			</td>
+
+			<tr>
+			
+			<td align="center">
+				</br> <div class="container">
+					<a href="store/index.php">
+						<img src="img/special.jpg" alt="Avatar" class="image" style="width:100%">
+						<div class="middle">
+							<div class="text" style="border-radius:2px;">SPECIAL ITEMS</div>
+						</div>
+					</a>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td height="25%" colspan="2"><br /></td>
+		</tr>
+	</table>
+	<table border="0px" align="center" style="background-color:#e5e5e5; width:100%; border-radius:9px">
+		<tr>
+			<td class="spac"><center><img src="img/hygiene.png" alt="Hygiene" height="70px" width="70px" /></center></td>
+			<td class="spac"><center><img src="img/hot.png" alt="Hot" height="70px" width="70px" /></center></td>
+			<td class="spac"><center><img src="img/del.png" alt="fastdel" height="70px" width="70px" /></center></td>
+			
+		</tr>
+		<tr>
+			<td style = "color : brown; text-align : center; font-size : 13px; font-family : Arial, Helvetica, sans-serif;">100% Hygienic</td>
+			<td style = "color : brown; text-align : center; font-size : 13px; font-family : Arial, Helvetica, sans-serif;">Hot and Fresh</td>
+			<td style = "color : brown; text-align : center; font-size : 13px; font-family : Arial, Helvetica, sans-serif;">Express Delivery</td>
+		</tr>
+	</table>
+	<script>
+		var myIndex = 0;
+		carousel();
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			}
+			myIndex++;
+			if (myIndex > x.length) {myIndex = 1}    
+			x[myIndex-1].style.display = "block";  
+			setTimeout(carousel, 5000);    
+		}
+	</script>
+	<br />
+	<footer>
+		<div class="bottom" style="overflow-x:auto;">
+			
+		
+			<!-- This part for the Assurance and the quality --
+			<center><table border="0px">
+				<caption style="color:#ffd480; font-size:17px;  font-variant: small-caps; font-family: Arial, Helvetica, sans-serif;">Assuarance</caption>
+				<tr>
+					<td style="padding:0px 10px 0px 10px;"><img src="hygiene.png" alt="Hygiene" height="100px" width="100px" /></td>
+					<td style="padding:0px 10px 0px 10px;"><img src="del.png" alt="How" height="100px" width="100px" /></td>
+				</tr>	
+				<tr>
+					<td style = "color : #ffeecc; text-align : center;">100% Hygienic</td>
+					<td style = "color : #ffeecc; text-align : center;">Fast Delivery</td>
+				</tr>
+			</table></center>
+			<br />
+			<hr style="color:black;" />-->
+		
+			
+		
+			<p style="color : brown; text-align : center; font-size : 13px; font-family : Arial, Helvetica, sans-serif;">Contact Us: 9658743258</p>
+		</div>
+	</footer>
+</body>
+</html>
+
